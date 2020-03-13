@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--This is a comment-->
+<html lang="en=ca">
+  <head>
+  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">
+  <meta name="decription" content="My website, with button">
+  <meta name="keywords" content="MTHS, website">
+  <meta name="author" content="Nathan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Program</title>
+  </head>
+    <body>
+    <h1>Hello, World!</h1>
+    <p>Click below to calculate the area of the square!</p>
+    <input type="text" id="textbox">
+    <br>
+    <button id="mybtn">Area Of The Square</button>
+    <script>
+    let squareLength;
+    let squareArea;
+    function myFunction() {
+      squareLength=document.getElementById("textbox").value;
+      squareArea=squareLength*squareLength;
+      alert(squareArea);
+}
+document.getElementById("mybtn").addEventListener("click", myFunction);
+    </script>
+    </body>
+</html>
